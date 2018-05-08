@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+ 
+          
+
+
+
+          
+<div id="slideout" class="meetings in">
+   
+    <div class="slideout_inner">
+
+        <h3 class="top right">{{name}}</h3>
+         
+        <div  *ngFor="let post of _postsArray" class="meeting z" >
+         
+       
+         <h3>{{post.Start}}-{{post.End}}</h3>
+         
+         <h3>{{post.Subject}}</h3>
+         <h3>{{post.OrganiserEmail}}</h3>
+    
+                    <div *ngFor="let Meeting of post.Meetings" class="meeting z">
+                  
+                     
+                                <h3 class="left">{{Meeting.Start}} - {{Meeting.End}}</h3>
+                                <h3 class="right1">{{Meeting.Subject}}</h3>
+                            <h3>{{Meeting.OrganiserEmail}}</h3>
+                       
+                </div>
+         </div>
+              
+</div>
+</div>    
